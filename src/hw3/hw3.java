@@ -49,10 +49,39 @@ public class hw3 {
 //		厭哪個數字，請您設計一隻程式，讓阿文可以輸入他不想要的數字(1～9)， 畫面會顯示他可以選擇
 //		的號碼與總數
 		System.out.println("3===================================");
-		Scanner y3 =new Scanner(System.in);
-		System.out.println("輸入1~49內");
-		int choose =y3.nextInt();
-		System.out.println("所輸入的是"+choose);
+//		Scanner y3 =new Scanner(System.in);
+//		System.out.println("輸入1~9內");
+//		int choose =y3.nextInt();
+//		int count = 0;
+//		System.out.println("所輸入的是"+choose);
+		
+		
+		
+//		for(int i =1; i<=49;i++) {
+//			if(choose<10) {
+//			if(i!=choose) {
+//				System.out.println("\t"+i);
+////				System.out.print(i);
+//				count++;
+//			}
+//			
+//			}
+//			else {System.out.println("輸入錯誤");break;}
+//		}
+//		System.out.println("剩餘可選總數"+count);
+//		(進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複)
+		System.out.println("==========================================");
+		int[] Array =new int[6];
+		for(int d=0;d<Array.length;d++) {
+			int random1 =(int)(Math.random()*49)+1;
+			Array[d]= random1;
+	       for(int s =0;s<Array.length;s++) {
+	    	   if(Array[d] ==Array[s]) {d--;break;}
+	       }	
+		}
+		for(int i =0;i<Array.length;i++) {
+			System.out.println(Array[i]);
+		}
 	}
 //	public static int guess(int guess) {
 //		int g =(int)(Math.random()*10);
