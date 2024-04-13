@@ -7,7 +7,7 @@ public class hw5_1 {
 
 	public static void main(String[] args) {
 		Scanner a =new Scanner(System.in);
-		System.out.println("輸入");
+		System.out.println("輸入寬和高");
 		int w =a.nextInt();
 		Scanner b=new Scanner(System.in);
 		int h=b.nextInt();
