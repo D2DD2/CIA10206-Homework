@@ -76,21 +76,7 @@ public class hw3 {
 //		System.out.println("剩餘可選總數"+count);
 //		(進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複)
 		System.out.println("==========================================");
-//		int[] Array =new int[6];
-//		for(int d=0;d<Array.length;d++) {
-//			int random1 =(int)(Math.random()*49)+1;
-//			Array[d]= random1;
-//	       for(int s =0;s<Array.length;s++) {
-//	    	   if(Array[d] ==Array[s]) {d--;break;}
-//	       }	
-//		}
-//		for(int i =0;i<Array.length;i++) {
-//			System.out.println(Array[i]);
-//		}
-//	}
-////	public static int guess(int guess) {
-////		int g =(int)(Math.random()*10);
-////		return g;
+//	
 ////	}
 	Set set = new HashSet();
 	while(set.size() !=6){
