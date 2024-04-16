@@ -1,13 +1,18 @@
 package hw3;
 
+
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
+import java.util.Set;
+
 
 public class hw3 {
 	public static void main(String[] args) {
 //		請設計一隻程式，使用者輸入三個數字後，輸出結果會為正三角形、等腰
 //		三角形、其它三角形或不是三角形
 		System.out.println("1===================================");
-//		Scanner yy =new Scanner(System.in);
+		Scanner yy =new Scanner(System.in);
 //		System.out.println("輸入三個數字");
 //		int no1 = yy.nextInt();
 //		int no2 = yy.nextInt();
@@ -71,21 +76,29 @@ public class hw3 {
 //		System.out.println("剩餘可選總數"+count);
 //		(進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複)
 		System.out.println("==========================================");
-		int[] Array =new int[6];
-		for(int d=0;d<Array.length;d++) {
-			int random1 =(int)(Math.random()*49)+1;
-			Array[d]= random1;
-	       for(int s =0;s<Array.length;s++) {
-	    	   if(Array[d] ==Array[s]) {d--;break;}
-	       }	
-		}
-		for(int i =0;i<Array.length;i++) {
-			System.out.println(Array[i]);
-		}
-	}
-//	public static int guess(int guess) {
-//		int g =(int)(Math.random()*10);
-//		return g;
+//		int[] Array =new int[6];
+//		for(int d=0;d<Array.length;d++) {
+//			int random1 =(int)(Math.random()*49)+1;
+//			Array[d]= random1;
+//	       for(int s =0;s<Array.length;s++) {
+//	    	   if(Array[d] ==Array[s]) {d--;break;}
+//	       }	
+//		}
+//		for(int i =0;i<Array.length;i++) {
+//			System.out.println(Array[i]);
+//		}
 //	}
-	
+////	public static int guess(int guess) {
+////		int g =(int)(Math.random()*10);
+////		return g;
+////	}
+	Set set = new HashSet();
+	while(set.size() !=6){
+		int w =(int) ((Math.random()*49)+1);
+		set.add(w);
+	}
+	Iterator objs = set.iterator();
+	while (objs.hasNext())
+		System.out.println(objs.next());
+	}
 }
