@@ -58,6 +58,7 @@ public class hw9_1 {
 				e.printStackTrace();
 			}
 			}
+			System.out.println(name+"繞完了");
 			
 		}
 	}
